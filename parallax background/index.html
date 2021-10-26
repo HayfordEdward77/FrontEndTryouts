@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="/layers/1.png" data-speed="5" alt="" class="layer">
+        <img src="/layers/2.png" data-speed="5" alt="" class="layer">
+        <img src="/layers/3.png" data-speed="2" alt="" class="layer">
+        <img src="/layers/4.png" data-speed="6" alt="" class="layer">
+        <img src="/layers/5.png" data-speed="8" alt="" class="layer">
+        <img src="/layers/6.png" data-speed="-2" alt="" class="layer">
+        <img src="/layers/7.png" data-speed="4" alt="" class="layer">
+        <img src="/layers/9.png" data-speed="6" alt="" class="layer">
+        <img src="/layers/10.png" data-speed="7" alt="" class="layer">
+    </section>
+
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            this.querySelectorAll('.layer').forEach(layer =>{
+                const speed = layer.getAttribute('data-speed')
+
+                const x = (window.innerWidth - e.pageX*speed)/200
+                const y = (window.innerHeight - e.pageY*speed)/200
+
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+        }
+    </script>
+</body>
+</html>

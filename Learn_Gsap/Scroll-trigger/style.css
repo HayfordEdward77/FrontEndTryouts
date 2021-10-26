@@ -1,0 +1,49 @@
+body{
+    margin:0;
+
+}
+
+.div-1, .div-2{
+    height:100vh;
+}
+
+.div-1{
+    background-color: pink;
+}
+
+.div-2{
+    background-color: white;
+}
+
+.square{
+    width:50px;
+    height:20vh;
+    background-color: fuchsia;
+}
+.square2{
+    width:50px;
+    height:20vh;
+    background-color: green;
+}
+
+.box{
+    width: 100px;
+    height:100px;
+    background-color: blue;
+}
+
+
+.panel{
+    height: 100vh;
+    background-color: teal;
+}
+
+.rect{
+    width: 100px;
+    height:100px;
+    background-color: purple;
+}
+
+.rect-red{
+    background-color: red;
+}

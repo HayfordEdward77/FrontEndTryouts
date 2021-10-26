@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id ="my-scrollbar">
+    <section>
+        <h1>
+            Scroll test
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, optio tempora? Ea tenetur iste eum sint numquam dolorem aspernatur obcaecati?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus a architecto adipisci?
+        </p>
+    </section>
+
+    <section>
+        <h1>
+            Scroll test
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, optio tempora? Ea tenetur iste eum sint numquam dolorem aspernatur obcaecati?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus a architecto adipisci?
+        </p>
+    </section>
+
+    <section>
+        <h1>
+            Scroll test
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, optio tempora? Ea tenetur iste eum sint numquam dolorem aspernatur obcaecati?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus a architecto adipisci?
+        </p>
+    </section>
+
+    <section>
+        <div class="custom" id="custom">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt minima suscipit numquam aliquam assumenda obcaecati, eum praesentium. Maiores illum maxime rem culpa repudiandae. Numquam, aliquid eum! Asperiores voluptas fugit cumque, quia pariatur sunt dolore eum ratione explicabo rem reprehenderit, perferendis maxime esse quasi iure odio debitis quaerat voluptatem aliquid sint. Soluta blanditiis et maiores dignissimos voluptatum minima voluptatem distinctio incidunt natus dolor temporibus sed eaque id, inventore molestias laudantium recusandae consectetur sequi, ab amet mollitia officia dolorem esse! Minus quia beatae tenetur odio illo adipisci deserunt in, impedit excepturi fuga consectetur quae quam quo animi. Nulla cupiditate quibusdam necessitatibus perferendis quae. Rem, excepturi. Repellat provident repellendus quo pariatur, obcaecati architecto adipisci ipsa ab perferendis enim nobis non nesciunt porro vitae quidem. Qui, numquam ad dolor sunt iusto recusandae, delectus quidem dolores debitis nihil, aliquid libero. Sunt voluptas explicabo consequuntur minima qui quae officiis aspernatur, nihil totam accusantium eos omnis nemo quisquam saepe itaque suscipit quam unde placeat mollitia cumque eum? Sunt perspiciatis, eveniet corrupti officiis ipsum voluptatum natus dolores est accusamus, animi perferendis asperiores quod cumque dolore praesentium! Sed at corrupti reprehenderit voluptatem accusantium dolores, laudantium, iure architecto eaque sint optio esse quas praesentium fuga, numquam similique rem quaerat fugit.</p>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+
+    <script src="smooth-scrollbar.js"></script>
+
+    <script>
+    var Scrollbar = window.Scrollbar;
+    
+    var options ={
+        'damping':0.05
+    }
+    Scrollbar.init(document.querySelector('#my-scrollbar'), options);
+    Scrollbar.init(document.querySelector('#custom'));
+    </script>
+
+</body>
+</html>
