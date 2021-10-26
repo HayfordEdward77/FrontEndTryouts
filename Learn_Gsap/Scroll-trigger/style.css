@@ -47,3 +47,20 @@ body{
 .rect-red{
     background-color: red;
 }
+
+.div-3{
+    background-color: white;
+    height:600vh;
+}
+
+.object{
+    width:300px;
+    height:300px;
+    background-color: yellow;
+}
+
+.object2{
+    width:200px;
+    height:200px;
+    background-color: black;
+}

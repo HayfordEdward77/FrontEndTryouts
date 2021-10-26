@@ -18,6 +18,28 @@ gsap.to(".square", {
     }
 });
 
+// gsap.to(".object",{
+//     scrollTrigger:{
+//         // trigger: ".object2",
+//         pin: ".object",
+//         start: "top top",
+//         end: "200%",
+//         markers: true,
+//         scrub: true,
+//     }
+// })
+
+gsap.to(".object", {
+    scale: 0.5,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".object",
+      pin: true,
+      end: "+=500",
+      scrub: true
+    }
+  });
+
 
 const tl = gsap.timeline({
     scrollTrigger: {
@@ -37,6 +59,5 @@ ScrollTrigger.create({
     trigger: ".rect",
     start: "top 80%",
     end: "top 50%",
-    markers: true,
     toggleClass: "rect-red"
 })
